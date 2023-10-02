@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: #0F111D;
+  color: white;
+  font-family: 'KoHo', sans-serif;
+  max-height: 100vh;
+
+}
+h1, h2 {
+  font-family: 'My Soul', cursive;
+  font-weight: 400;
+}
+h1 {
+  color: #34DCE7;
+  text-shadow: 0.5px 0.5px 10px rgba(52, 220, 231, 0.5);
+}
+h2 {
+  color: #9C4EFF;
+  text-shadow: 0.5px 0.5px 10px rgba(156, 78, 255, 0.5);
+}
+a {
+  color: white;
+}
+button {
+  background-color: #000;
+  color: white;
+  border: 1px solid #34DCE7;
+  border-radius: 5px;
+  box-shadow: 1px 1px 50px 0px rgba(52, 220, 231, 0.5);
+}
+#contadorDiv {
+  background-color: #000;
+  color: #9C4EFF;
+  border: 1px solid #34DCE7;
+  border-radius: 5px;
+}
+img {
+  width: 8vw;
+}
+@media (max-width: 768px) {
+  h1 {
+    padding-left: 2.5%;
+    font-size: clamp(10px, 17.5vw, 80px) ;
+  }
+  h2 {
+    font-size: clamp(10px, 8vw, 40px) ;
+    padding-left: 25%;
+  }
+  h3 {
+    font-size: clamp(10px, 3.75vw, 25px)
+  }
+  footer p {
+    font-size: clamp(10px, 3.75vw, 20px) ;
+  }
+  .LN {
+    font-size: clamp(10px, 4.25vw, 30px)
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  header{
+    width: 100%;
+    height: 18.75vh;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.75);
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3.125vh;
+    width: 100%;
+    height: 56.25vh;
+    margin-bottom: 3.125vh;
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 18.75vh;
+    background-color: #000;
+    box-shadow: 0px -8px 20px 0px rgba(0, 0, 0, 0.75);
+  }
+  .footerSocialMedias {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+  #contadorDiv {
+    font-size: 5vw;
+    z-index: 2;
+    width: 25vw;
+    height: 5vh;
+    translate: 125% -50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+  #conselhoDiv {
+    font-size: 5vw;
+    margin: auto;
+    border: 1px solid #9C4EFF;
+    border-radius: 5px;
+    width: 87.5vw;
+    height: 31.25vh;
+    box-shadow: 1px 1px 50px 0px rgba(156, 78, 255, 0.25);
+  }
+  #conselhoDiv p {
+    padding-top: 10% !important;
+    padding: 7.25%;
+    text-align: center;
+    
+  }
+  .socialMedias {
+    display: none;
+  }
+  .botao {
+    font-size: 5vw;
+    width: 50vw;
+    height: 7.5vh;
+    margin: auto;
+  }
+}
+
+@media (min-width: 769px) {
+  h1 {
+    font-size: clamp(30px, 7.5vw, 80px) ;
+  }
+  h2 {
+    font-size: clamp(25px, 4vw, 50px) ;
+  }
+  h3 {
+    display: flex;
+    align-items: center;
+    font-size: clamp(25px, 2vw, 35px);
+    padding-left: 5%;
+  }
+.footerSocialMedias {
+  display: none;
+}
+.logo {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header {
+  transition: opacity 500ms;
+  height: 9.5vh;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 16px 40px 0px rgba(0, 0, 0, 0.75);
+}
+.socialMedias {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.socialMedias img {
+  width: clamp(20px, 3.5vw, 60px) ;
+}
+main {
+  transition: opacity 500ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 80.9vh;
+}
+#contadorDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  translate: 200% -50%;
+  width: 10vw;
+  height: 5vh;
+  font-size: clamp(20px, 2.5vw, 30px);
+  letter-spacing: clamp(1px, 0.2, 5px);
+}
+#conselhoDiv {
+  width: 50vw;
+  height: 35vh;
+  border: 1px solid #9C4EFF;
+  border-radius: 5px;
+  box-shadow: 1px 1px 50px 0px rgba(156, 78, 255, 0.25);
+  text-align: center;
+  letter-spacing: clamp(1px, 0.2, 5px);
+}
+#conselhoDiv p {
+  padding-top: 7.5% !important;
+  padding: 5%;
+  font-size: clamp(20px, 2.5vw, 30px);
+}
+.botao {
+  font-size: clamp(20px, 2.5vw, 30px);
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 27vw;
+  height: 9vh;
+  letter-spacing: clamp(1px, 0.2, 5px);
+}
+footer {
+  transition: opacity 500ms;
+  display: grid;
+  grid-template-areas: 
+  "h3 LN"
+  "h3 p";
+  width: 100%;
+  height: 9.5vh;
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 0px -16px 40px 0px rgba(0, 0, 0, 0.25);
+  grid-template-columns: 3fr 2fr;
+}
+footer p {grid-area: p; }
+footer h3 {grid-area: h3; }
+.LN {grid-area: LN; }
+
+footer p {
+  font-size: clamp(20px, 2.5vw, 30px);
+  text-align: center;
+}
+
+}
+
+.opacidadeZero {
+  opacity: 0 !important;
+  transition: opacity 250ms;
+}
+
