@@ -158,7 +158,6 @@ img {
 }
 
 header {
-  transition: opacity 500ms;
   height: 9.5vh;
   display: flex;
   justify-content: space-between;
@@ -172,7 +171,7 @@ header {
   list-style: none;
 }
 .socialMedias img {
-  width: clamp(20px, 3.5vw, 60px) ;
+  width: clamp(25px, 3.5vw, 60px) ;
 }
 main {
   transition: opacity 500ms;
@@ -191,7 +190,7 @@ main {
   translate: 200% -50%;
   width: 10vw;
   height: 5vh;
-  font-size: clamp(20px, 2.5vw, 30px);
+  font-size: clamp(25px, 2.5vw, 30px);
   letter-spacing: clamp(1px, 0.2, 5px);
 }
 #conselhoDiv {
@@ -206,7 +205,7 @@ main {
 #conselhoDiv p {
   padding-top: 7.5% !important;
   padding: 5%;
-  font-size: clamp(20px, 2.5vw, 30px);
+  font-size: clamp(25px, 2.5vw, 30px);
 }
 .botao {
   font-size: clamp(20px, 2.5vw, 30px);
@@ -216,7 +215,6 @@ main {
   letter-spacing: clamp(1px, 0.2, 5px);
 }
 footer {
-  transition: opacity 500ms;
   display: grid;
   grid-template-areas: 
   "h3 LN"
@@ -240,6 +238,6 @@ footer p {
 
 .opacidadeZero {
   opacity: 0 !important;
-  transition: opacity 250ms;
+  transition: opacity 350ms;
 }
 

@@ -8,9 +8,7 @@ const footer = document.querySelector('footer');
 
 
 function toggleOpacity() {
-  header.classList.toggle('opacidadeZero');
   main.classList.toggle('opacidadeZero');
-  footer.classList.toggle('opacidadeZero');
 }
 
 function getAdvice(){
